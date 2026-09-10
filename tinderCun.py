@@ -14,7 +14,9 @@ def registrarPersonas():
         edad=int(input("ingrese su edad"))
     individuo["edad"]=edad
     print()
-    
+
+    #ciudad
+    ciudad = input("escribe tu ciudad")
 
     #selecionar genero
     generos = ["Masculino", "Femenino", "Otro"]
@@ -55,7 +57,20 @@ def registrarPersonas():
        individuo ["genero"] = generoInteres[2]
     else:
         print("opcion no valida")
-       
+        
+
+
+    #intereses
+        
+    interesesE = input("digite sus gustos sin comas ni puntos")
+    intereses=interesesE.split(",")
+    print()
+
+    #distancia
+    distanciaM = int(input("maximo de km de la otra persona" ))
+    print()
+
+    
    
     print(individuo)
     return individuo
@@ -64,15 +79,20 @@ def registrarPersonas():
 def mostrarPersonas(personas):
     print (personas)
 
+
+
+    
+#resgistro de personas
+
+
+
 def main():
               
     
     
-            #resgistro de personas
     
     
-    
-    opciones="1.registrar personas \n. mostrar las persona\n. salir"
+    opciones="1. registrar personas \n2. mostrar las persona\n3. salir"
     print(opciones)
     opcion2=int(input("digite una opcion"))
     print()
