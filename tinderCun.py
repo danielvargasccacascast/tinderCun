@@ -63,7 +63,7 @@ def registrarPersonas():
     #intereses
         
     interesesE = input("digite sus gustos sin comas ni puntos")
-    intereses=interesesE.split(",")
+    intereses=interesesE.split(" ")
     print()
 
     #distancia
@@ -80,9 +80,10 @@ def mostrarPersonas(personas):
     print (personas)
 
 
+#
 
     
-#resgistro de personas
+        
 
 
 
@@ -92,7 +93,7 @@ def main():
     
     
     
-    opciones="1. registrar personas \n2. mostrar las persona\n3. salir"
+    opciones="1. registrar personas \n2. mostrar las persona\n3. buscar concidencias\n10. salir"
     print(opciones)
     opcion2=int(input("digite una opcion"))
     print()
@@ -109,6 +110,10 @@ def main():
                 print ("i",i)
                 print(personas)
                 personas[i]=registrarPersonas()
+                
+            elif opcion == 3:
+                individuoBuscar=int(input("para que persona quierews buscar concidencia"))
+                buscarConcidenciasByPersonas(personas,individuoBuscar)
 
                 #mostrar personas
 
